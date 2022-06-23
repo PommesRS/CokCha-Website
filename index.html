@@ -98,7 +98,7 @@
               <span data-year="2011" data-info="Erstes Investmen"></span>
           </div>
           <div class="input active">
-              <span data-year="2015" data-info="Buchveröffentlichung"></span>
+              <span data-year="2015" data-info="Buch veröffentlichung"></span>
           </div>
           <div class="input">
               <span data-year="2016" data-info="Grünung der Holding"></span>
@@ -255,22 +255,22 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <section id="section7">
         <div class="criteria">
-            <h2 class="sub-heading">Investment Kriterien</h2>
+            <h2 class="sub-heading3">Investment Kriterien</h2>
                 <p class="sub-sub-heading">3 Gründe warum unsere Investments gelingen.</p>
         </div>
         <section class="timeline">
             <ul>
-              <li>
+              <li class="in-view">
                 <div>
                   <time>20% maximaler Gewerbeanteil</time> Wir investieren nur in Wohnimmobilien mit einem geringen Gewerbeanteil, denn unsere Investments sollen sozial und nachhaltig sein.
                 </div>
               </li>
-              <li>
+              <li class="in-view">
                 <div>
                   <time>100% Deutschlandweit</time> Wir sind eine Investment Gruppe mit Heimatverbundenheit. Wir wollen nicht in möglichst vielen Ländern vertreten sein, sondern das Leben in Deutschland besser machen.
                 </div>
               </li>
-              <li>
+              <li class="in-view">
                 <div>
                   <time>100% Langfristiges Wachstum</time> Die Einwohnerentwicklung muss langfristig gesehen steigen, so reduzieren wir zeitweisen Leerstand durch Mieterfluktuation.
                 </div>
@@ -304,7 +304,7 @@
                 <div class="overlay-showmore">
             </div>
         </div>
-        <div style="display: none;">
+        <div class="expertflex" style="display: none;">
             <div class="expertcontainer1">
             <p>
                 „Torben Käselow gehört ohne Frage zu den jungen Wilden in der Branche. Allerdings kenne ich nur 
@@ -377,7 +377,7 @@
             Auch hier handeln wir klar nach dem Motto „<a class="bold blue" href="#section3">EINFACH MACHEN!</a>“ und laden Sie 
             herzlich ein, mit uns gemeinsam die Welt zu verbessern.
         </p>
-        <div style="padding-bottom: 50px;" class="donationcontainer">
+        <div style="padding-bottom: 50px;"" class="donationcontainer">
             <img src="Spenden/logo_fdb84f85bb80b90b40cf7dcf54197241_2x.png" alt="1">
             <p>
                 Auch in diesem Jahr haben wir „Radio Hamburg: Hörer helfen Kindern“ mit einer Spende unterstützt. Wir freuen uns sehr über den veröffentlichten Artikel.
@@ -544,27 +544,6 @@
 
     // define variables
     var items = document.querySelectorAll(".timeline li");
-
-    // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function callbackFunc() {
-        for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-            items[i].classList.add("in-view");
-        }
-        }
-    }
 
     // listen for events
     window.addEventListener("load", callbackFunc);
