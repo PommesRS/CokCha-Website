@@ -841,7 +841,7 @@ time {
   background-color: #1b81a2;
   padding: 10px;
   font-size: 20pt;
-  
+  border-radius: 10px;
 }
 
 .donationcontainer{
@@ -988,7 +988,7 @@ time {
 }
 
 .contactflex h3{
-  margin-top: 20px;
+  margin: 20px 0px;
   color: #fff;
   text-align: center;
 }
